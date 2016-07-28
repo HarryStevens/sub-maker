@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- meta -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Subtitle File Maker</title>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+
+		<!-- css -->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+
+	</head>
+	<body>
+
+		<div class="container-fluid">
+			<div class="col-md-6">
+				<div id="subs">
+					<div class="row sub sub-first sub-no-sort">
+						<div class="col-md-1">
+							<div class="row">
+								<div class="col-md-12 row-controls">
+									<i class="fa fa-times row-control" aria-hidden="true"></i><i class="fa fa-bars row-control row-control-disable" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 row-number"></div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="row">
+								<div class="col-md-12">
+									Start Time:
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<input class="start-min number" max="59" placeholder="mm">
+								</div>
+								<div class="col-md-6">
+									<input class="start-sec number" max="59" placeholder="ss">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="row">
+								<div class="col-md-12">
+									End Time:
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<input class="end-min number" max="59" placeholder="mm">
+								</div>
+								<div class="col-md-6">
+									<input class="end-sec number" max="59" placeholder="ss">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="row">
+								<div class="col-md-12">
+									Subtitle:
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<input class="subtitle-text" type="text">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row controls">
+					<div class="col-md-12">
+						<span class="control control-add">Add subtitle</span> | <span id="create" class="control control-create">Convert to text</span><a download="subs.en_US.srt" id="downloadlink" style="display: none">Download .srt file</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row" id="output-wrapper">
+					<div class="col-md-12">
+						Output (read only):
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<textarea readonly id="output"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- js -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/touchpunch.js"></script>
+		<script type="text/javascript" src="js/underscore.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+
+	</body>
+</html>
+
