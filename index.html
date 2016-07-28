@@ -19,78 +19,84 @@
 	<body>
 
 		<div class="container-fluid">
-			<div class="col-md-6">
-				<div id="subs">
-					<div class="row sub sub-first sub-no-sort">
-						<div class="col-md-1">
-							<div class="row">
-								<div class="col-md-12 row-controls">
-									<i class="fa fa-times row-control" aria-hidden="true"></i><i class="fa fa-bars row-control row-control-disable" aria-hidden="true"></i>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12 row-number"></div>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class="row">
-								<div class="col-md-12">
-									Start Time:
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<input class="start-min number" max="59" placeholder="mm">
-								</div>
-								<div class="col-md-6">
-									<input class="start-sec number" max="59" placeholder="ss">
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class="row">
-								<div class="col-md-12">
-									End Time:
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<input class="end-min number" max="59" placeholder="mm">
-								</div>
-								<div class="col-md-6">
-									<input class="end-sec number" max="59" placeholder="ss">
-								</div>
-							</div>
-						</div>
-						<div class="col-md-7">
-							<div class="row">
-								<div class="col-md-12">
-									Subtitle:
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<input class="subtitle-text" type="text">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row controls">
-					<div class="col-md-12">
-						<span class="control control-add">Add subtitle</span> | <span id="create" class="control control-create">Convert to text</span><a download="subs.en_US.srt" id="downloadlink" style="display: none">Download .srt file</a>
-					</div>
-				</div>
+			<div class="row" style="margin: 0 auto;display: table;margin-top: 20px;">
+				<b>Subtitle File Maker</b> by <a href="http://www.twitter.com/harry_stevens">@Harry_Stevens</a> | <a href="https://github.com/HarryStevens/sub-maker">Source</a>
+
 			</div>
-			<div class="col-md-6">
-				<div class="row" id="output-wrapper">
-					<div class="col-md-12">
-						Output (read only):
+			<div class="row">
+				<div class="col-md-6">
+					<div id="subs">
+						<div class="row sub sub-first sub-no-sort">
+							<div class="col-md-1">
+								<div class="row">
+									<div class="col-md-12 row-controls">
+										<i class="fa fa-times row-control" aria-hidden="true"></i><i class="fa fa-bars row-control row-control-disable" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 row-number"></div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="row">
+									<div class="col-md-12">
+										Start Time:
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<input class="start-min number" max="59" placeholder="mm">
+									</div>
+									<div class="col-md-6">
+										<input class="start-sec number" max="59" placeholder="ss">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="row">
+									<div class="col-md-12">
+										End Time:
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<input class="end-min number" max="59" placeholder="mm">
+									</div>
+									<div class="col-md-6">
+										<input class="end-sec number" max="59" placeholder="ss">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="row">
+									<div class="col-md-12">
+										Subtitle:
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<input class="subtitle-text" type="text">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row controls">
+						<div class="col-md-12">
+							<span class="control control-add">Add subtitle</span> | <span id="create" class="control control-create">Convert to text</span><a download="subs.en_US.srt" id="downloadlink" style="display: none">Download .srt file</a>
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<textarea readonly id="output"></textarea>
+				<div class="col-md-6">
+					<div class="row" id="output-wrapper">
+						<div class="col-md-12">
+							Output (read only):
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<textarea readonly id="output"></textarea>
+						</div>
 					</div>
 				</div>
 			</div>

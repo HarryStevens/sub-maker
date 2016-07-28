@@ -11,10 +11,9 @@ input {
 }
 .row-number {
 	padding-top: 10px;
+	text-align: right;
 }
 .row-controls {
-	margin-left: -14px;
-	margin-right: 20px;
 	width: 120%;
 }
 .row-control {
