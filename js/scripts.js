@@ -4,12 +4,15 @@ $(document).ready(function() {
 	function dubDig(x) {
 		var y;
 		var digCount = x.toString().length;
-		if (digCount == 1) {
-			y = '0' + x;
-		} else if (digCount == '') {
+		if (digCount == 0) {
 			y = '00';
-		} else {
+			
+		} else if (digCount == 1) {
+			y = '0' + x;
+		} else if (digCount == 2){
 			y = x;
+		} else {
+			y = x.replace(/^0+/, '');
 		}
 		return y;
 	}
@@ -23,7 +26,7 @@ $(document).ready(function() {
 	var sub = '<div class="row sub"><div class="col-md-1"><div class="row"><div class="col-md-12 row-controls"><i class="fa fa-times row-control" aria-hidden="true"></i><i class="fa fa-bars row-control" aria-hidden="true"></i></div></div><div class="row"><div class="col-md-12 row-number"></div></div></div><div class="col-md-2"><div class="row"><div class="col-md-12">Start Time:</div></div><div class="row"><div class="col-md-6"><input class="start-min number" max="59" placeholder="mm"></div><div class="col-md-6"><input class="start-sec number" max="59" placeholder="ss"></div></div></div><div class="col-md-2"><div class="row"><div class="col-md-12">End Time:</div></div><div class="row"><div class="col-md-6"><input class="end-min number" max="59" placeholder="mm"></div><div class="col-md-6"><input class="end-sec number" max="59" placeholder="ss"></div></div></div><div class="col-md-7"><div class="row"><div class="col-md-12">Subtitle:</div></div><div class="row"><div class="col-md-12"><input class="subtitle-text" type="text"></div></div></div></div>';
 
 	// restrict inputs
-	$('input.number').keyup(function() {
+	$(document).on('keyup', 'input.number', function() {
 
 		var max = Number($(this).attr('max'));
 		var str = $(this).val();
@@ -35,7 +38,6 @@ $(document).ready(function() {
 			$(this).val(str);
 
 		}
-
 	});
 
 	//remove download link when you change stuff
