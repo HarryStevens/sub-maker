@@ -100,7 +100,6 @@ $(document).ready(function() {
 			var endSec = dubDig($(this).find('.end-sec').val());
 			var endMsec = tripDig($(this).find('.end-msec').val());
 			var sub = $(this).find('.subtitle-text').val();
-			console.log(sub);
 
 			// style variable
 			function styleCheck(x) {
