@@ -157,9 +157,14 @@ $(document).ready(function() {
 	$(document).on('click', '.fa-times', function() {
 		$(this).closest('.sub').remove();
 		// have to re-do counts
-		$('.row-number').each(function(i) {
+		var len = $('.row-number').each(function(i) {
 			$(this).html(i + 1);
-		});
+		}).length;
+		// if there's only one row
+		if (len == 1){
+			$('.fa-bars').addClass('row-control-disable');
+			$('.sub').addClass('sub-no-sort');
+		}
 	});
 
 	// download subtitle (tutorial : https://jsfiddle.net/uselesscode/qm5ag/)
