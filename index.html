@@ -27,7 +27,7 @@
 
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-7">
 					<div id="subs">
 						<div class="row sub sub-first sub-no-sort">
 							<div class="col-md-1">
@@ -42,43 +42,77 @@
 							</div>
 							<div class="col-md-2">
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-md-12 label-wrapper">
 										Start Time:
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6">
+									<div class="col-md-4 number-wrapper">
 										<input class="start-min number" max="59" placeholder="mm">
 									</div>
-									<div class="col-md-6">
+									<div class="col-md-4 number-wrapper">
 										<input class="start-sec number" max="59" placeholder="ss">
+									</div>
+									<div class="col-md-4 number-wrapper">
+										<input class="start-msec number" max="999" placeholder="mms">
 									</div>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-md-12 label-wrapper">
 										End Time:
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6">
+									<div class="col-md-4 number-wrapper">
 										<input class="end-min number" max="59" placeholder="mm">
 									</div>
-									<div class="col-md-6">
+									<div class="col-md-4 number-wrapper">
 										<input class="end-sec number" max="59" placeholder="ss">
+									</div>
+									<div class="col-md-4 number-wrapper">
+										<input class="end-msec number" max="999" placeholder="mms">
 									</div>
 								</div>
 							</div>
-							<div class="col-md-7">
+							<div class="col-md-6">
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-md-12 label-wrapper">
 										Subtitle:
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-md-12 subtitle-wrapper">
 										<input class="subtitle-text" type="text">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1">
+								<div class="row">
+									<div class="col-md-12 label-wrapper">
+										Style:
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 style-wrapper">
+										<div class="style-select">
+											<div class="style-selected options-hidden">
+												<span data-style="none">None<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+											</div>										
+											<div class="style-select-option style-select-option-hidden">
+												<span data-style="none">None</span>
+											</div>
+											<div class="style-select-option style-select-option-hidden">
+												<span data-style="bold"><i class="fa fa-bold" aria-hidden="true"></i></span>
+											</div>
+											<div class="style-select-option style-select-option-hidden">
+												<span data-style="italic"><i class="fa fa-italic" aria-hidden="true"></i></span>
+											</div>
+											<div class="style-select-option style-select-option-hidden">
+												<span data-style="underline"><i class="fa fa-underline" aria-hidden="true"></i></span>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -90,7 +124,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-5">
 					<div class="row" id="output-wrapper">
 						<div class="col-md-12">
 							Output (read only):
